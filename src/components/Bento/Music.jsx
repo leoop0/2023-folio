@@ -1,5 +1,5 @@
 // utils
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 // Styles
 import "./Bento.scss";
@@ -15,6 +15,7 @@ import MusicSound from "../../assets/sounds/cigarettes.mp3";
 const Music = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [volume] = useState(0.1);
 
   const playSound = () => {
     if (isPlaying) {
@@ -24,6 +25,10 @@ const Music = () => {
     }
     setIsPlaying(!isPlaying);
   };
+
+  useEffect(() => {
+    audioRef.current.volume = volume;
+  }, [volume]);
 
   return (
     <div className="card spotify">

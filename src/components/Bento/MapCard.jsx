@@ -17,12 +17,32 @@ const MapCard = () => {
   const [lng, setLng] = useState(-0.5792);
   const [lat, setLat] = useState(44.8378);
   const [zoom, setZoom] = useState(9);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const handleDarkModeChange = (e) => {
+      setIsDarkMode(e.matches);
+    };
+
+    prefersDarkMode.addEventListener("change", handleDarkModeChange);
+    setIsDarkMode(prefersDarkMode.matches);
+
+    return () => {
+      prefersDarkMode.removeEventListener("change", handleDarkModeChange);
+    };
+  }, []);
+
+  let style = isDarkMode
+    ? "mapbox://styles/hawkrick/cljvtmn1101x901pk5gne5wrw"
+    : "mapbox://styles/hawkrick/ckqm0dcs94swv17pm9z342cy5";
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/hawkrick/ckqm0dcs94swv17pm9z342cy5",
+      style: style,
       center: [lng, lat],
       zoom: zoom,
     });

@@ -8,13 +8,15 @@ import ProjectPage from "./pages/Project/ProjectPage";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projets" element={<Projects />} />
-        <Route path="/projets/:name" element={<ProjectPage />} />
-      </Routes>
-    </Router>
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projets" element={<Projects />} />
+          <Route path="/projets/:name" element={<ProjectPage />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

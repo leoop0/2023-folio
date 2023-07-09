@@ -1,5 +1,5 @@
 .projects-page {
-  background: linear-gradient(360deg, #fff 0%, #fff 27.73%, rgba(255, 255, 255, 0) 100%);
+  background: var(--gradientOverlay2);
   position: relative;
   height: 100vh;
   display: flex;
@@ -15,10 +15,7 @@
     content: "";
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(#f7f7f7 1.6px, transparent 1.6px),
-      linear-gradient(90deg, #f7f7f7 1.6px, transparent 1.6px),
-      linear-gradient(#f7f7f7 1px, transparent 1px),
-      linear-gradient(90deg, #f7f7f7 1px, #ffffff 1px);
+    background-image: var(--gradientPattern);
     background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
     background-position: -1.6px -1.6px, -1.6px -1.6px, -1px -1px, -1px -1px;
   }
@@ -30,7 +27,7 @@
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -0.4px;
-    color: var(--dark);
+    color: var(--text);
   }
 
   .search-container {
@@ -48,7 +45,7 @@
 
     &.sticky {
       top: -136px;
-      background-color: #f7f7f750;
+      background-color: var(--blur-bg);
       backdrop-filter: blur(10px);
       // margin-bottom: 0px;
       // gap: 0px;
@@ -63,24 +60,23 @@
       gap: 12px;
       position: sticky;
       top: 40px;
-      background-color: #f7f7f784;
-      backdrop-filter: blur(10px);
       width: 100%;
 
       input[type="text"] {
         display: flex;
         padding: 14px 14px 13px 11px;
         flex: 1 0 0;
-        border: 1px solid var(--gray-border);
+        border: 1px solid var(--border);
         border-radius: 8px;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: var(--bg);
+        color: var(--text);
 
         &:focus {
           outline: none;
         }
       }
 
-      input[type="image"] {
+      .submit {
         display: flex;
         width: 48px;
         height: 48px;
@@ -89,8 +85,13 @@
         align-items: center;
         flex-shrink: 0;
         border-radius: 8px;
-        border: 1px solid var(--gray-border);
+        border: 1px solid var(--border);
         background: var(--gray-bg);
+        cursor: pointer;
+
+        svg {
+          color: var(--text);
+        }
       }
     }
   }
@@ -111,8 +112,8 @@
       .project {
         display: flex;
         padding: 16px;
-        background-color: white;
-        border: 1px solid var(--gray-border);
+        background-color: var(--bg);
+        border: 1px solid var(--border);
         border-radius: 10px;
         align-items: center;
         gap: 24px;
@@ -135,7 +136,7 @@
             gap: 3px;
 
             h3 {
-              color: var(--dark);
+              color: var(--text);
               font-size: 15px;
               font-weight: 700;
               line-height: 22.5px;

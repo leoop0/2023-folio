@@ -4,6 +4,7 @@
 import "./ClearSearch.scss";
 
 // SVGs
+import { ReactComponent as Search } from "../../assets/ico/search.svg";
 
 // PNGs
 
@@ -15,7 +16,7 @@ const ClearSearch = ({ value, clearSearch }) => {
         <img src="/assets/img/halto_icon.png" alt="Halto Logo" />
         <img src="/assets/img/betclic_icon.png" alt="Betclic Logo" />
         <div className="btn btn-primary">
-          <img src="/assets/icons/search.svg" alt="search-icon" />
+          <Search />
         </div>
         <img src="/assets/img/doritos_icon.png" alt="Doritos Logo" />
         <img src="/assets/img/meyze_icon.png" alt="Meyze Logo" />

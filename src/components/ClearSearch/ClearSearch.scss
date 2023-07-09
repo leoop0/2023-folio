@@ -39,7 +39,7 @@
       align-items: center;
       justify-content: center;
       pointer-events: none;
-      img {
+      svg {
         width: 32px;
         height: 32px;
         opacity: 1;
@@ -53,7 +53,7 @@
     align-items: center;
     gap: 24px;
     h2 {
-      color: var(--dark);
+      color: var(--text);
       font-size: 24px;
       font-weight: 600;
       line-height: 20px;

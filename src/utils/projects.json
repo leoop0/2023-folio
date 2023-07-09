@@ -22,7 +22,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["Développement web"]
     },
     {
       "name": "Betclic",
@@ -32,7 +32,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["UI Design", "UX Design"]
     },
     {
       "name": "Doritos",
@@ -42,7 +42,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["Direction Artistique"]
     },
     {
       "name": "Choffée",
@@ -52,7 +52,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["Direction Artistique"]
     },
     {
       "name": "Hexacup",
@@ -62,7 +62,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["UI Design", "UX Design"]
     },
     {
       "name": "WWF",
@@ -72,7 +72,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["UI Design", "Direction Artistique"]
     },
     {
       "name": "Meyze",
@@ -82,7 +82,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["UI Design"]
     },
     {
       "name": "Forecast",
@@ -92,7 +92,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["UI Design"]
     },
     {
       "name": "Horror Vacui",
@@ -102,7 +102,7 @@
       "url": "https://exemple.com/projet2",
       "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
       "btn": "Voir",
-      "tags": ["Product Design", "Direction Artistique"]
+      "tags": ["UI Design"]
     }
   ]
 }

@@ -4,8 +4,13 @@ import { Link } from "react-router-dom";
 // Styles
 import "./Projects.scss";
 
+// SVGs
+import { ReactComponent as Search } from "../../assets/ico/search.svg";
+
 // JSON
 import projects from "../../utils/projects.json";
+
+// Components
 import ClearSearch from "../../components/ClearSearch/ClearSearch";
 import Me from "../../components/Me/Me";
 
@@ -19,12 +24,13 @@ function Projects() {
   };
 
   const filteredProjects = projects.projects.filter((project) => {
-    const { name, extract } = project;
+    const { name, extract, tags } = project;
     const lowerCaseSearchValue = searchValue.toLowerCase();
 
     return (
       name.toLowerCase().includes(lowerCaseSearchValue) ||
-      extract.toLowerCase().includes(lowerCaseSearchValue)
+      extract.toLowerCase().includes(lowerCaseSearchValue) ||
+      tags.some((tag) => tag.toLowerCase().includes(lowerCaseSearchValue))
     );
   });
 
@@ -64,7 +70,9 @@ function Projects() {
             value={searchValue}
             onChange={handleSearchChange}
           />
-          <input type="image" src="/assets/icons/search.svg" alt="Rechercher" />
+          <div className="submit">
+            <Search />
+          </div>
         </div>
       </div>
       <div className="projects-container">

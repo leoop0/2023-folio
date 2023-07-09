@@ -7,15 +7,54 @@
   font-family: "Plus Jakarta Sans";
 }
 
-:root {
-  --dark: #161616;
-  --gray: #7d8084;
-  --gray-bg: #f5f5f5;
-  --gray-border: #dedede;
-  --bg-white: #ffffff;
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #161616;
+    --gray: #7d8084;
+    --gray-bg: #f5f5f5;
+    --border: #dedede;
+    --bg: #ffffff;
+    --btn-hover: #ededed;
+    --blur-bg: #f7f7f750;
 
-  --red: #ec184b;
-  --green: #30e14c;
+    --red: #ec184b;
+    --green: #30e14c;
+
+    --gradientPattern: linear-gradient(#f7f7f7 1.6px, transparent 1.6px),
+      linear-gradient(90deg, #f7f7f7 1.6px, transparent 1.6px),
+      linear-gradient(#f7f7f7 1px, transparent 1px),
+      linear-gradient(90deg, #f7f7f7 1px, #ffffff 1px);
+
+    --gradientOverlay: linear-gradient(270deg, #fff 0%, rgba(0, 255, 255, 0) 100%);
+    --gradientOverlay2: linear-gradient(
+      360deg,
+      #f9f9fa 0%,
+      #f9f9fa 27.73%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: white;
+    --gray: #7d8084;
+    --gray-bg: #161616;
+    --border: #282828;
+    --bg: #1c1c1c;
+    --btn-hover: #111010;
+    --blur-bg: #1c1c1c50;
+
+    --red: #ec184b;
+    --green: #30e14c;
+
+    --gradientPattern: linear-gradient(#131313 1.6px, transparent 1.6px),
+      linear-gradient(90deg, #131313 1.6px, transparent 1.6px),
+      linear-gradient(#131313 1px, transparent 1px), linear-gradient(90deg, #131313 1px, black 1px);
+
+    --gradientOverlay: linear-gradient(270deg, black 0%, rgba(0, 0, 0, 0) 100%);
+    --gradientOverlay2: linear-gradient(360deg, #161616 0%, #161616 27.73%, rgba(0, 0, 0, 0) 100%);
+  }
 }
 
 body {
@@ -32,7 +71,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 16px;
-  color: var(--dark);
+  color: var(--text);
   padding: 11px 19px;
   border-radius: 6px;
   cursor: pointer;
@@ -41,16 +80,16 @@ body {
 
   &-primary {
     background-color: var(--gray-bg);
-    border: solid 1px var(--gray-border);
+    border: solid 1px var(--border);
 
     &:hover {
-      background-color: #ededed;
+      background-color: var(--btn-hover);
     }
   }
 
   &-secondary {
     background-color: var(--bg-white);
-    border: solid 1px var(--gray-border);
+    border: solid 1px var(--border);
 
     &:hover {
       background-color: var(--gray-bg);
