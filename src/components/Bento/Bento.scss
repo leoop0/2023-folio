@@ -1,0 +1,196 @@
+.bento {
+  background-color: #f9f9fa;
+  width: 50vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  overflow-y: auto;
+  height: 100vh;
+
+  .desc {
+    display: flex;
+    padding: 28px 18px;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #ee4f4f 2.2%, #e343f5 29.17%, #4b8cee 95.31%);
+    height: fit-content;
+
+    p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 145%;
+
+      span {
+        color: var(--bg-white);
+      }
+    }
+  }
+
+  .card {
+    background-color: var(--bg-white);
+    border: solid 1px var(--gray-border);
+    border-radius: 10px;
+    overflow: hidden;
+
+    .background {
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      img {
+        width: 64px;
+        height: 64px;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        h3 {
+          color: var(--dark);
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 18px;
+        }
+
+        p {
+          color: var(--gray);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  .cards.projects-music {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+
+    .newgo {
+      .content {
+        margin-top: -15%;
+        p {
+          &:first-of-type {
+            margin-bottom: 7%;
+          }
+        }
+      }
+    }
+
+    .cards-left {
+      display: grid;
+      gap: 22px;
+
+      .spotify {
+        .content {
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+          position: relative;
+
+          .ico {
+            position: absolute;
+            bottom: 5px;
+            right: 8px;
+          }
+
+          .img-content {
+            position: relative;
+            height: 64px;
+
+            .player {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              width: 32px;
+              height: 32px;
+              background-color: white;
+              border-radius: 50px;
+              box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cards.stack-projects {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 22px;
+
+    .cards-left {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .stack {
+      overflow: visible;
+      .content {
+        display: flex;
+        flex-direction: row !important;
+        gap: 10px;
+      }
+    }
+  }
+
+  .map {
+    overflow: hidden;
+
+    a {
+      display: none;
+    }
+
+    .mapboxgl-ctrl-bottom-right {
+      display: none;
+    }
+    .map-container {
+      height: 150px;
+    }
+  }
+
+  .cards.spline-o {
+    .card.spline {
+      height: 200px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: unset;
+    height: unset;
+
+    .stack {
+      .content {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    overflow: unset;
+    height: unset;
+    * {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}

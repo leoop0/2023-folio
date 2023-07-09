@@ -1,0 +1,9 @@
+.home-page {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .home-page {
+    display: block;
+  }
+}

@@ -1,0 +1,102 @@
+.infos {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#f7f7f7 1.6px, transparent 1.6px),
+      linear-gradient(90deg, #f7f7f7 1.6px, transparent 1.6px),
+      linear-gradient(#f7f7f7 1px, transparent 1px),
+      linear-gradient(90deg, #f7f7f7 1px, #ffffff 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -1.6px -1.6px, -1.6px -1.6px, -1px -1px, -1px -1px;
+  }
+
+  .infos-container {
+    padding: 5.5vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+
+    img {
+      height: 100px;
+      width: 100px;
+      border-radius: 100px;
+    }
+
+    .paragraph {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+
+      h1 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -0.4px;
+      }
+
+      p {
+        color: var(--gray);
+        width: 400px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+
+    .disp {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .indicator {
+        background-color: var(--green);
+        height: 12px;
+        width: 12px;
+        border-radius: 20px;
+      }
+
+      span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+      }
+    }
+
+    .btns-container {
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: unset;
+    height: unset;
+    text-align: center;
+    .infos-container {
+      width: 100%;
+      align-items: center;
+      padding-top: 40px;
+    }
+  }
+
+  //   @media screen and (max-width: 640px) {
+  //     width: unset;
+  //     height: unset;
+  //   }
+}

@@ -1,0 +1,108 @@
+{
+  "projects": [
+    {
+      "name": "Newgo",
+      "thumbnail": "/assets/img/newgo_icon.png",
+      "extract": "Un annuaire complet de l’écosystème gaming & esport.",
+      "description": "Newgo est un SaaS qui structure l'écosystème de l'e-sport et du jeu de manière innovante. Cette société offre de nombreux services via son application : Sponsoring, InGame Advertising, Video or live content etc.",
+      "url": "https://newgo.io/",
+      "carousel": [
+        "https://www.salutcestleo.com/projects/newgo/1.png",
+        "https://www.salutcestleo.com/projects/newgo/1.png",
+        "https://www.salutcestleo.com/projects/newgo/1.png"
+      ],
+      "btn": "Voir le site web",
+      "tags": ["Product Design", "Développement web"]
+    },
+    {
+      "name": "Halto",
+      "thumbnail": "/assets/img/halto_icon.png",
+      "extract": "Un jeu-vidéo shooter 1v1 jouable dans le navigateur. ",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    },
+    {
+      "name": "Betclic",
+      "thumbnail": "/assets/img/betclic_icon.png",
+      "extract": "Une application pour fidéliser les gros parieurs.",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    },
+    {
+      "name": "Doritos",
+      "thumbnail": "/assets/img/doritos_icon.png",
+      "extract": "Une campagne pour promouvoir les nouveaux Doritos. ",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    },
+    {
+      "name": "Choffée",
+      "thumbnail": "/assets/img/choffee_icon.png",
+      "extract": "Packaging d’une marque de chicorée éco-responsable.",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    },
+    {
+      "name": "Hexacup",
+      "thumbnail": "/assets/img/hexacup_icon.png",
+      "extract": "Redesign d'une app de tournois de football gratuits.",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    },
+    {
+      "name": "WWF",
+      "thumbnail": "/assets/img/wwf_icon.png",
+      "extract": "Site fictif mettant en avant de la data pour la WWF.",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    },
+    {
+      "name": "Meyze",
+      "thumbnail": "/assets/img/meyze_icon.png",
+      "extract": "Une application pour apprendre la physique.",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    },
+    {
+      "name": "Forecast",
+      "thumbnail": "/assets/img/forecast_icon.png",
+      "extract": "Une app météo, sans aucun clic.",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    },
+    {
+      "name": "Horror Vacui",
+      "thumbnail": "/assets/img/horror_icon.png",
+      "extract": "Redesign d'un site e-commerce.",
+      "description": "Description détaillée du projet 2",
+      "url": "https://exemple.com/projet2",
+      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "btn": "Voir",
+      "tags": ["Product Design", "Direction Artistique"]
+    }
+  ]
+}
