@@ -1,30 +1,31 @@
 .me {
   position: fixed;
-  top: 40px;
-  left: 40px;
+  top: 10px;
+  left: 10px;
   display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
   z-index: 50;
 
-  img {
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
+  .profile {
+    transform: scale(0.5);
   }
 
   .content {
+    margin-left: -28px;
     p {
+      font-family: "Recoleta";
       color: var(--text);
-      font-size: 14px;
+      font-size: 17px;
       font-style: normal;
       font-weight: 600;
       line-height: 20px;
     }
 
     span {
-      color: var(--gray);
+      color: var(--text);
+      opacity: 0.7;
       font-size: 14px;
       font-style: normal;
       font-weight: 600;

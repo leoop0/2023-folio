@@ -69,41 +69,46 @@ function Projects() {
           content="Une liste de mes différents projets, du Product Design à la Direction Artistique."
         />
       </Helmet>
+      <div className="bg">
+        <img src="/assets/img/bg.svg" alt="" />
+      </div>
       <Me />
-      <div className={`search-container ${isSticky ? "sticky" : ""}`}>
-        <h1>Projets</h1>
-        <div className={`searchbar ${isSticky ? "sticky" : ""}`}>
-          <input
-            type="text"
-            placeholder="Rechercher un projet"
-            value={searchValue}
-            onChange={handleSearchChange}
-          />
-          <div className="submit">
-            <Search />
+      <div className="container">
+        <div className={`search-container ${isSticky ? "sticky" : ""}`}>
+          <h1>Projets</h1>
+          <div className={`searchbar ${isSticky ? "sticky" : ""}`}>
+            <input
+              type="text"
+              placeholder="Rechercher un projet"
+              value={searchValue}
+              onChange={handleSearchChange}
+            />
+            <div className="submit">
+              <Search />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="projects-container">
-        <div className="projects-list">
-          {filteredProjects.length > 0 ? (
-            filteredProjects.map((project) => (
-              <div className="project" key={project.name}>
-                <div className="content">
-                  <img src={project.thumbnail} alt={project.name} />
-                  <div className="text">
-                    <h3>{project.name}</h3>
-                    <p>{project.extract}</p>
+        <div className="projects-container">
+          <div className="projects-list">
+            {filteredProjects.length > 0 ? (
+              filteredProjects.map((project) => (
+                <div className="project" key={project.name}>
+                  <div className="content">
+                    <img src={project.thumbnail} alt={project.name} />
+                    <div className="text">
+                      <h3>{project.name}</h3>
+                      <p>{project.extract}</p>
+                    </div>
                   </div>
+                  <Link to={`/projets/${project.name}`} className="btn btn-primary">
+                    Voir
+                  </Link>
                 </div>
-                <Link to={`/projets/${project.name}`} className="btn btn-primary">
-                  Voir
-                </Link>
-              </div>
-            ))
-          ) : (
-            <ClearSearch value={searchValue} clearSearch={clearSearch} />
-          )}
+              ))
+            ) : (
+              <ClearSearch value={searchValue} clearSearch={clearSearch} />
+            )}
+          </div>
         </div>
       </div>
     </div>

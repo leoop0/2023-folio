@@ -37,8 +37,11 @@ const ProjectPage = () => {
     <div className="project-page">
       <Helmet>
         <title>Léo Frati - {projet.name}</title>
-        <meta name="description" content={projet.extract} />
+        <meta name="description" content={projet.extractyar} />
       </Helmet>
+      <div className="bg">
+        <img src="/assets/img/bg.svg" alt="" />
+      </div>
       <Me />
       <div className="project-container">
         <div className="content">

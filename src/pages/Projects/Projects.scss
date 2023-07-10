@@ -1,5 +1,5 @@
 .projects-page {
-  background: var(--gradientOverlay2);
+  background: #f7ede6;
   position: relative;
   height: 100vh;
   display: flex;
@@ -8,19 +8,29 @@
   overflow: auto;
   padding-bottom: 80px;
 
+  .bg {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    transform: rotate(90deg);
+    filter: saturate(1.5);
+  }
+
   &::after {
     position: fixed;
-    top: 0;
-    z-index: -1;
+    z-index: 2;
     content: "";
     height: 100%;
     width: 100%;
-    background-image: var(--gradientPattern);
-    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-    background-position: -1.6px -1.6px, -1.6px -1.6px, -1px -1px, -1px -1px;
+    background-image: url("../../assets/noise1.png");
+    background-size: 300px;
+    mix-blend-mode: overlay;
+    background-attachment: fixed;
+    opacity: 0.7;
   }
 
   h1 {
+    font-family: "Recoleta";
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -30,131 +40,138 @@
     color: var(--text);
   }
 
-  .search-container {
-    transition: all 0.6s;
-    padding-top: 80px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    display: flex;
-    gap: 28px;
-    flex-direction: column;
+  .container {
+    position: relative;
+    z-index: 3;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    position: sticky;
-    top: 0px;
 
-    &.sticky {
-      top: -136px;
-      background-color: var(--blur-bg);
-      backdrop-filter: blur(10px);
-      // margin-bottom: 0px;
-      // gap: 0px;
+    .search-container {
+      transition: all 0.6s;
+      padding-top: 80px;
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      display: flex;
+      gap: 28px;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      position: sticky;
+      top: 0px;
 
-      h1 {
-        opacity: 0;
+      &.sticky {
+        top: -136px;
+        background-color: var(--blur-bg);
+        backdrop-filter: blur(10px);
+        // margin-bottom: 0px;
+        // gap: 0px;
+
+        h1 {
+          opacity: 0;
+        }
+      }
+      .searchbar {
+        max-width: 660px;
+        display: flex;
+        gap: 12px;
+        position: sticky;
+        top: 40px;
+        width: 100%;
+
+        input[type="text"] {
+          display: flex;
+          padding: 14px 14px 13px 11px;
+          flex: 1 0 0;
+          border: none;
+          border-radius: 12px;
+          background-color: var(--bg);
+          color: var(--text);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .submit {
+          display: flex;
+          width: 48px;
+          height: 48px;
+          padding: 12px;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          border-radius: 12px;
+          background: var(--text);
+          cursor: pointer;
+
+          svg {
+            color: var(--bg);
+          }
+        }
       }
     }
-    .searchbar {
+
+    .projects-container {
+      width: 90%;
       max-width: 660px;
       display: flex;
-      gap: 12px;
-      position: sticky;
-      top: 40px;
-      width: 100%;
-
-      input[type="text"] {
-        display: flex;
-        padding: 14px 14px 13px 11px;
-        flex: 1 0 0;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background-color: var(--bg);
-        color: var(--text);
-
-        &:focus {
-          outline: none;
-        }
-      }
-
-      .submit {
-        display: flex;
-        width: 48px;
-        height: 48px;
-        padding: 12px;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        border-radius: 8px;
-        border: 1px solid var(--border);
-        background: var(--gray-bg);
-        cursor: pointer;
-
-        svg {
-          color: var(--text);
-        }
-      }
-    }
-  }
-
-  .projects-container {
-    width: 90%;
-    max-width: 660px;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    height: fit-content;
-
-    .projects-list {
-      display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 28px;
+      height: fit-content;
 
-      .project {
+      .projects-list {
         display: flex;
-        padding: 16px;
-        background-color: var(--bg);
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        align-items: center;
-        gap: 24px;
+        flex-direction: column;
+        gap: 12px;
 
-        .content {
+        .project {
           display: flex;
+          padding: 22px;
+          background-color: var(--bg);
+          border-radius: 24px;
           align-items: center;
           gap: 24px;
-          flex: 1 0 0;
 
-          img {
-            width: 64px;
-            height: 64px;
-            flex-shrink: 0;
-          }
-
-          .text {
+          .content {
             display: flex;
-            flex-direction: column;
-            gap: 3px;
+            align-items: center;
+            gap: 24px;
+            flex: 1 0 0;
 
-            h3 {
-              color: var(--text);
-              font-size: 15px;
-              font-weight: 700;
-              line-height: 22.5px;
-              letter-spacing: -0.4px;
+            img {
+              width: 64px;
+              height: 64px;
+              flex-shrink: 0;
             }
 
-            p {
-              color: var(--gray);
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 21px;
+            .text {
+              display: flex;
+              flex-direction: column;
+              gap: 3px;
+
+              h3 {
+                color: var(--text);
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 22.5px;
+                letter-spacing: -0.4px;
+              }
+
+              p {
+                color: var(--gray);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 21px;
+              }
             }
           }
-        }
 
-        .btn {
-          height: fit-content;
+          .btn {
+            height: fit-content;
+          }
         }
       }
     }

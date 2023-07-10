@@ -2,24 +2,33 @@
   height: 100vh;
   width: 50%;
   display: flex;
+  position: relative;
   align-items: center;
   overflow: hidden;
-  background: var(--gradientOverlay);
+
+  .bg {
+    position: absolute;
+    z-index: 1;
+    left: -42%;
+    filter: saturate(1.5);
+  }
 
   &::after {
     position: absolute;
-    z-index: -1;
+    z-index: 2;
     content: "";
     height: 100%;
     width: 100%;
-    background-image: var(--gradientPattern);
-    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
-    background-position: -1.6px -1.6px, -1.6px -1.6px, -1px -1px, -1px -1px;
+    background-image: url("../../assets/noise1.png");
+    background-size: 300px;
+    mix-blend-mode: overlay;
+    opacity: 0.7;
   }
 
   .infos-container {
     padding: 5.5vw;
     position: relative;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +40,10 @@
       border-radius: 100px;
     }
 
+    .profile {
+      transform: scale(1.2);
+    }
+
     .paragraph {
       display: flex;
       flex-direction: column;
@@ -38,8 +51,9 @@
       gap: 10px;
 
       h1 {
+        font-family: "Recoleta";
         color: var(--text);
-        font-size: 36px;
+        font-size: 50px;
         font-style: normal;
         font-weight: 700;
         line-height: 48px;
@@ -47,7 +61,8 @@
       }
 
       p {
-        color: var(--gray);
+        color: var(--text);
+        opacity: 0.7;
         width: 400px;
         font-size: 16px;
         font-style: normal;
