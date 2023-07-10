@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Helmet } from "react-helmet";
 
 // Data
 import projects from "../../utils/projects.json";
@@ -34,6 +35,10 @@ const ProjectPage = () => {
 
   return (
     <div className="project-page">
+      <Helmet>
+        <title>Léo Frati - {projet.name}</title>
+        <meta name="description" content={projet.extract} />
+      </Helmet>
       <Me />
       <div className="project-container">
         <div className="content">

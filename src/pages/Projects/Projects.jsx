@@ -1,5 +1,7 @@
+// Utils
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 // Styles
 import "./Projects.scss";
@@ -60,6 +62,13 @@ function Projects() {
 
   return (
     <div className="projects-page" ref={projectsPageRef}>
+      <Helmet>
+        <title>Léo Frati - Projets</title>
+        <meta
+          name="description"
+          content="Une liste de mes différents projets, du Product Design à la Direction Artistique."
+        />
+      </Helmet>
       <Me />
       <div className={`search-container ${isSticky ? "sticky" : ""}`}>
         <h1>Projets</h1>
