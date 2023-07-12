@@ -36,7 +36,7 @@ const Bento = () => {
                 <img src="/assets/img/halto_icon.png" alt="Logo Halto" />
                 <div className="text">
                   <h3>Halto</h3>
-                  <p>Un space shooter 1v1 jouable dans le navigateur. </p>
+                  <p>Un space shooter tactique 1v1 jouable dans un navigateur. </p>
                 </div>
                 <Link to="/projets/Halto" className="btn btn-primary">
                   Découvrir
