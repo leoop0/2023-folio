@@ -52,7 +52,12 @@ const ProjectPage = () => {
             {/* <img src={projet.thumbnail} alt={projet.name} /> */}
             <div className="name">
               <h1>{projet.name}</h1>
-              <a href={projet.url} className="btn btn-secondary" rel="noreferrer" target="_blank">
+              <a
+                href={projet.url}
+                className={`btn btn-secondary ${projet.url == null ? "hide" : ""}`}
+                rel="noreferrer"
+                target="_blank"
+              >
                 {projet.btn}
               </a>
             </div>
@@ -67,7 +72,7 @@ const ProjectPage = () => {
           <p>{projet.description}</p>
           <Slider {...carouselSettings}>
             {projet.carousel.map((image, index) => (
-              <div key={index}>
+              <div key={index} className="carousel-item">
                 <img src={image} alt={`Image ${index}`} />
               </div>
             ))}

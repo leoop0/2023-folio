@@ -107,6 +107,10 @@
       align-items: center;
       padding-top: 40px;
     }
+
+    .bg {
+      transform: scale(0.8) rotate(90deg);
+    }
   }
 
   //   @media screen and (max-width: 640px) {

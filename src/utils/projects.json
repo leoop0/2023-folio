@@ -6,103 +6,109 @@
       "extract": "Un annuaire complet de l’écosystème gaming & esport.",
       "description": "Newgo est un SaaS qui structure l'écosystème de l'e-sport et du jeu de manière innovante. Cette société offre de nombreux services via son application : Sponsoring, InGame Advertising, Video or live content etc.",
       "url": "https://newgo.io/",
-      "carousel": [
-        "https://www.salutcestleo.com/projects/newgo/1.png",
-        "https://www.salutcestleo.com/projects/newgo/1.png",
-        "https://www.salutcestleo.com/projects/newgo/1.png"
-      ],
+      "carousel": ["/assets/projets/newgo-1.png", "../assets/projets/newgo-2.png"],
       "btn": "Voir le site web",
-      "tags": ["Product Design", "Développement web"]
+      "tags": ["Product Design", "Développement web", "Alternance", "2023"]
     },
     {
       "name": "Halto",
       "thumbnail": "/assets/img/halto_icon.png",
       "extract": "Un jeu-vidéo shooter 1v1 jouable dans le navigateur. ",
-      "description": "Description détaillée du projet 2",
-      "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
-      "btn": "Voir",
-      "tags": ["Développement web"]
+      "description": "Halto est un jeu vidéo jouable dans le navigateur. Il s'agit d'un 1vs1 inspiré de Space Invader. Dans Halto, vous avez un système de 'pause', durant lequel vous choisissez des pouvoirs spécifiques. Cela améliore la stratégie et le gameplay.",
+      "url": "https://haltogame.com/",
+      "carousel": ["/assets/projets/halto-1.png", "../assets/projets/halto-2.png"],
+      "btn": "Jouer au jeu",
+      "tags": ["Développement web", "Projet Ecole", "2021"]
+    },
+    {
+      "name": "Intergalactic",
+      "thumbnail": "/assets/img/intergalactic_icon.png",
+      "extract": "Expérience digitale en hommage au clip Intergalactic.",
+      "description": "Un projet d'école fictif pour MTV assez original. Il nous fallait créer un produit digital rendant hommage à un clip qui nous était attribué. Pour mon groupe est moi, ce fut Intergalactic des Beasties Boys qui a été réalisé en rendant hommage à la Pop Culture. Nous avons décidé de passer par la Pop Culture afin de lui rendre hommage dans un jeu :  SPACE ROBOT Squid’s Fury. Le jeu se déroule en 3 étapes (comme le clip) avec 3 gameplays différents. Un space invaders, un Just Dance & un Street Fighter.",
+      "url": "https://www.behance.net/gallery/155936609/Study-Case-Beastie-Boys-Intergalactic",
+      "carousel": ["/assets/projets/inter-1.png", "/assets/projets/inter-2.png"],
+      "btn": "Voir le Behance",
+      "tags": ["Direction Artistique", "Projet Ecole", "2022"]
     },
     {
       "name": "Betclic",
       "thumbnail": "/assets/img/betclic_icon.png",
       "extract": "Une application pour fidéliser les gros parieurs.",
-      "description": "Description détaillée du projet 2",
-      "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
-      "btn": "Voir",
-      "tags": ["UI Design", "UX Design"]
+      "description": "Un projet d'école en partenariat avec Betclic. Notre objectif ? Créer une application pour fidéliser les gros parieurs. Pour cela nous nous sommes orientés vers un mix entre Betclic et BeReal. Chaque jour, une notification est envoyée aux utilisateurs, ils ont 10 minutes pour faire un maximum de paris, avec des côtes boostées.",
+      "url": null,
+      "carousel": ["/assets/projets/betclic.png"],
+      "btn": "Voir le PDF",
+      "tags": ["UI/UXDesign", "Projet Ecole", "2022"]
     },
     {
       "name": "Doritos",
       "thumbnail": "/assets/img/doritos_icon.png",
-      "extract": "Une campagne pour promouvoir les nouveaux Doritos. ",
-      "description": "Description détaillée du projet 2",
-      "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "extract": "Une campagne pour promouvoir les nouveaux Doritos.",
+      "description": "Un projet d'école en partenariat avec Pepsico. Pour accompagner la sortie des nouveaux Doritos goût Peperoni, Pepsico nous a demandé d'imaginer stratégie et activations. Pour cela, nous avons créé le concept d'un jeu navigateur dans lequel il faut retrouver le 'Golden Peperoni'. Le joueur passe donc de niveau en niveau à la manière d'un point'n'click.",
+      "url": null,
+      "carousel": ["/assets/projets/doritos-1.png", "/assets/projets/doritos-2.png"],
       "btn": "Voir",
-      "tags": ["Direction Artistique"]
+      "tags": ["Direction Artistique", "Projet Ecole", "2022"]
     },
     {
       "name": "Choffée",
       "thumbnail": "/assets/img/choffee_icon.png",
       "extract": "Packaging d’une marque de chicorée éco-responsable.",
-      "description": "Description détaillée du projet 2",
-      "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "description": "Création d'un packaging pour eune marque de chicorée éco-responsable. En effet, la chicorée bien que rétro souffre d'une image vieillisante. Il nous fallait donc lui redonner de l'attrait, particulièrement pour les nouvelles générations.",
+      "url": null,
+      "carousel": ["/assets/projets/choffee.png"],
       "btn": "Voir",
-      "tags": ["Direction Artistique"]
+      "tags": ["Direction Artistique", "Projet Ecole", "2023"]
     },
     {
       "name": "Hexacup",
       "thumbnail": "/assets/img/hexacup_icon.png",
       "extract": "Redesign d'une app de tournois de football gratuits.",
-      "description": "Description détaillée du projet 2",
-      "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
-      "btn": "Voir",
-      "tags": ["UI Design", "UX Design"]
+      "description": "Un projet d'école en partenariat avec l'association Hexacup. Créée en 2020, Hexacup souhaitait mettre à jour son identité graphique pour mieux correspondre à sa cible, tout proposant de nouvelles features, dans le but de fidéliser les utilisateurs.",
+      "url": "https://www.figma.com/proto/Ck9J7TywJpgqAEYFNhxhjB/Hexacup?page-id=16%3A7&type=design&node-id=540-2487&viewport=417%2C1360%2C0.07&t=ZfMVbNHIRdFRSH3e-1&scaling=min-zoom&starting-point-node-id=540%3A2487&mode=design",
+      "carousel": ["/assets/projets/hexacup.png"],
+      "btn": "Voir le PDF",
+      "tags": ["UI/UX Design", "Projet Ecole", "2023"]
     },
     {
       "name": "WWF",
       "thumbnail": "/assets/img/wwf_icon.png",
       "extract": "Site fictif mettant en avant de la data pour la WWF.",
-      "description": "Description détaillée du projet 2",
-      "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
-      "btn": "Voir",
-      "tags": ["UI Design", "Direction Artistique"]
+      "description": "Afin de sensibiliser d'avantage de personnes aux actions que mène la WWF, nous devions imaginer un site web mettant en avant de la data, quelle qu'elle soit, avec une identité graphique importante.",
+      "url": "https://www.behance.net/gallery/140315317/WWF-Data-For-Change",
+      "carousel": ["/assets/projets/wwf-1.png", "../assets/projets/wwf-2.png"],
+      "btn": "Voir le Behance",
+      "tags": ["UI Design", "Projet Ecole", "2021"]
     },
     {
       "name": "Meyze",
       "thumbnail": "/assets/img/meyze_icon.png",
       "extract": "Une application pour apprendre la physique.",
-      "description": "Description détaillée du projet 2",
-      "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "description": "Petit projet d'école, dans lequel il nous fallait créer une application permettant à tous d'apprendre la physique de façon ludique.",
+      "url": null,
+      "carousel": ["/assets/projets/meyze.png"],
       "btn": "Voir",
-      "tags": ["UI Design"]
+      "tags": ["UI Design", "Projet Ecole", "2021"]
     },
     {
       "name": "Forecast",
       "thumbnail": "/assets/img/forecast_icon.png",
       "extract": "Une app météo, sans aucun clic.",
-      "description": "Description détaillée du projet 2",
+      "description": "Petit projet d'école dans lequel il fallait créer une application de météo, sans aucun clic. L'utilisateur doit donc pouvoir intéragir avec l'app sans taper avec son doigt. Pour cela nous avons utilisé des swipes, la commande vocale ou encore l'accéléromètre.",
       "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "carousel": ["/assets/projets/meteo.png"],
       "btn": "Voir",
-      "tags": ["UI Design"]
+      "tags": ["UI Design", "Projet Ecole", "2020"]
     },
     {
       "name": "Horror Vacui",
       "thumbnail": "/assets/img/horror_icon.png",
       "extract": "Redesign d'un site e-commerce.",
-      "description": "Description détaillée du projet 2",
+      "description": "Redesign du site e-commerce Horror Vacui. Un de mes tous premiers projets d'école.",
       "url": "https://exemple.com/projet2",
-      "carousel": ["/assets/newgo/1.webp", "/assets/newgo/1.webp", "/assets/newgo/1.webp"],
+      "carousel": ["/assets/projets/horror.png"],
       "btn": "Voir",
-      "tags": ["UI Design"]
+      "tags": ["UI Design", "Projet Ecole", "2020"]
     }
   ]
 }

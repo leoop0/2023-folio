@@ -72,14 +72,14 @@ function Projects() {
       <div className="bg">
         <img src="/assets/img/bg.svg" alt="" />
       </div>
-      <Me />
+      <Me display={`${isSticky ? "hide" : ""}`} />
       <div className="container">
         <div className={`search-container ${isSticky ? "sticky" : ""}`}>
           <h1>Projets</h1>
           <div className={`searchbar ${isSticky ? "sticky" : ""}`}>
             <input
               type="text"
-              placeholder="Rechercher un projet"
+              placeholder="Rechercher un projet, une année..."
               value={searchValue}
               onChange={handleSearchChange}
             />

@@ -8,9 +8,9 @@ import "./Me.scss";
 // SVGs
 import { ReactComponent as Profile } from "../../assets/profile.svg";
 
-const Me = () => {
+const Me = (props) => {
   return (
-    <Link to="/" className="me">
+    <Link to="/" className={`me ${props.display}`}>
       <Profile className="profile" />
       <div className="content">
         <p>léo frati</p>

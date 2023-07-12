@@ -96,7 +96,7 @@ const Bento = () => {
         <div className="cards spline-o">
           <div className="card spline">
             <iframe
-              src="https://my.spline.design/glassfluidpastel-ba92adb197d99b7aaa9dcf2782b1cda7/"
+              src="https://my.spline.design/interactionroom-3c9fdb6af347f26ac80cc8c6665c080e/"
               width="100%"
               height="100%"
               frameBorder="0"
