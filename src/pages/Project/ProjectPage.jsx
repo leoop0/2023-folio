@@ -70,14 +70,16 @@ const ProjectPage = () => {
             ))}
           </div>
           <p>{projet.description}</p>
-          <Slider {...carouselSettings}>
-            {projet.carousel.map((image, index) => (
-              <div key={index} className="carousel-item">
-                <img src={image} alt={`Image ${index}`} />
-              </div>
-            ))}
-          </Slider>
         </div>
+      </div>
+      <div className="project-images">
+        <Slider {...carouselSettings}>
+          {projet.carousel.map((image, index) => (
+            <div key={index} className="carousel-item">
+              <img src={image} alt={`Image ${index}`} />
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
