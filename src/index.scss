@@ -7,6 +7,10 @@
   font-family: "Plus Jakarta Sans";
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --text: #09244b;
   --gray: #7d8084;
